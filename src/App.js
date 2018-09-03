@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import NavBar from './components/navbar'
 import Counters from './components/counters'
 import './App.css'
-import { connect } from 'react-redux'
 
 class App extends Component {
   state = {

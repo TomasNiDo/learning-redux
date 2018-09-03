@@ -1,5 +1,4 @@
-import { createStore, combineReducers, applyMiddleware } from 'redux'
-import logger from 'redux-logger'
+import { createStore } from 'redux'
 
 const initialState = {
   counters: [
@@ -44,9 +43,5 @@ const reducer = (state = initialState, action) => {
 }
 
 const store = createStore(reducer)
-
-store.subscribe(() =>
-  console.log(store.getState())
-)
 
 export default store
